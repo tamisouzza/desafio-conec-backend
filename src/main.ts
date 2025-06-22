@@ -6,6 +6,9 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  const port = process.env.PORT || 3000;
+  await app.listen(port);
+
   const config = new DocumentBuilder()
     .setTitle('API Meu Projeto')
     .setDescription('Documentação da API do desafio técnico')
