@@ -29,7 +29,6 @@ Antes de começar, certifique-se de ter instalado:
 
 1. Clone o repositório:
 
-```bash
 git clone https://github.com/tamisouzza/desafio-conec-backend.git
 
 2. Acesse o diretório:
@@ -129,39 +128,31 @@ Deployed version available
 
 How to run locally
 Clone the project
-bash
-Copiar
-Editar
+
 git clone https://github.com/tamisouzza/desafio-conec-backend.git
+
 Enter the project folder
-bash
-Copiar
-Editar
+
 cd desafio-conec-backend
 Install dependencies
-bash
-Copiar
-Editar
+
 npm install
+
 Configure the environment variables
+
 Create a .env file based on .env.example and fill in your database and credentials:
 
-env
-Copiar
-Editar
 DATABASE_URL=your_postgresql_connection_string
 JWT_SECRET=your_jwt_secret
 GOOGLE_CLIENT_ID=your_google_client_id
 Run the database migrations
-bash
-Copiar
-Editar
+
 npx prisma migrate dev
+
 Start the development server
-bash
-Copiar
-Editar
+
 npm run start:dev
+
 The server will be available at:
 http://localhost:3000
 
@@ -169,11 +160,11 @@ Swagger documentation:
 http://localhost:3000/api
 
 Running tests
-bash
-Copiar
-Editar
+
 npm run test
+
 Deployment
+
 The backend is deployed and available at:
 https://desafio-conec-backend.onrender.com
 
