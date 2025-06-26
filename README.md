@@ -82,3 +82,101 @@ npm run start:prod
 
 
 
+Backend – Fullstack Project
+
+Objective
+Create a backend API using NestJS, with authentication, user roles (admin/user), and full CRUD operations, integrated with PostgreSQL and documented using Swagger.
+
+Technologies
+NestJS
+
+TypeScript
+
+PostgreSQL
+
+Prisma ORM
+
+JWT (authentication)
+
+Bcrypt (password hashing)
+
+Swagger (API documentation)
+
+Jest (unit testing)
+
+Render (deployment)
+
+Features
+User registration
+
+Login with JWT authentication
+
+Password encryption with bcrypt
+
+Role-based access control: admin and user
+
+Full CRUD for users
+
+Filter users by name and status (active/inactive)
+
+Unit tests
+
+Swagger documentation
+
+Google login (extra)
+
+Deployed version available
+
+How to run locally
+Clone the project
+bash
+Copiar
+Editar
+git clone https://github.com/tamisouzza/desafio-conec-backend.git
+Enter the project folder
+bash
+Copiar
+Editar
+cd desafio-conec-backend
+Install dependencies
+bash
+Copiar
+Editar
+npm install
+Configure the environment variables
+Create a .env file based on .env.example and fill in your database and credentials:
+
+env
+Copiar
+Editar
+DATABASE_URL=your_postgresql_connection_string
+JWT_SECRET=your_jwt_secret
+GOOGLE_CLIENT_ID=your_google_client_id
+Run the database migrations
+bash
+Copiar
+Editar
+npx prisma migrate dev
+Start the development server
+bash
+Copiar
+Editar
+npm run start:dev
+The server will be available at:
+http://localhost:3000
+
+Swagger documentation:
+http://localhost:3000/api
+
+Running tests
+bash
+Copiar
+Editar
+npm run test
+Deployment
+The backend is deployed and available at:
+https://desafio-conec-backend.onrender.com
+
+Author
+Developed by Tami Soares
+https://github.com/tamisouzza
